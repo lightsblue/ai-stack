@@ -3,3 +3,4 @@ langsmith
 langchain
 langchain-openai
 langchain-ollama
+langchain-tavily
