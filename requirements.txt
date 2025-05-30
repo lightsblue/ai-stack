@@ -1,4 +1,5 @@
 langgraph
 langsmith
 langchain
-langchain-openai 
+langchain-openai
+langchain-ollama

@@ -9,7 +9,9 @@ def main():
         messages: Annotated[list, add_messages]
 
     graph_builder = StateGraph(State)
-    llm = init_chat_model("openai:gpt-4o-mini")
+    # llm = init_chat_model("openai:gpt-4o-mini")
+    llm = init_chat_model("ollama:gemma3:4b")
+
 
     def chatbot(state: State):
         return {"messages": [llm.invoke(state["messages"])]}
